@@ -40,7 +40,7 @@ amazon-reviews-analysis/
    DATA_PATH = "/content/drive/My Drive/Amazon-Analysis/electronics_small.csv"
 
 
-Run cells sequentially:
+3. Run cells sequentially:
 
 EDA: ratings distribution, helpful votes, time trends
 
@@ -54,7 +54,7 @@ Semantic search demo (embeddings + FAISS)
 
 Outputs (CSV/JSON) are saved under outputs/.
 
-📊 Features Implemented
+## 📊 Features Implemented
 
 Exploratory Data Analysis (EDA): ratings, votes, time trends
 
@@ -66,7 +66,7 @@ Topic discovery with TF-IDF + Latent Semantic Analysis (LSA)
 
 Semantic search demo (Sentence-BERT + FAISS)
 
-📦 Data & Models
+## 📦 Data & Models
 
 Not in GitHub (large files):
 
@@ -79,7 +79,7 @@ tfidf_30000.joblib, lgb_helpful_model.pkl (model artifacts)
 👉 Keep these in data/ locally or in Google Drive.
 To recreate them, run the notebook’s relevant cells.
 
-🛠️ How to Run Locally
+## 🛠️ How to Run Locally
 
 Clone this repo and install requirements:
 
@@ -88,7 +88,7 @@ cd amazon-reviews-analysis
 pip install -r requirements.txt
 
 
-Recommended minimal requirements.txt:
+## requirements.txt:
 
 pandas
 numpy
@@ -101,7 +101,7 @@ sentence-transformers
 faiss-cpu
 tqdm
 
-📤 Push to GitHub (step-by-step)
+## 📤 Push to GitHub (step-by-step)
 # initialize repo (first time only)
 git init
 git add .
@@ -110,7 +110,6 @@ git commit -m "Initial commit: Amazon reviews analysis"
 # connect to GitHub repo
 git branch -M main
 git remote add origin git@github.com:YOUR_USERNAME/amazon-reviews-analysis.git   # SSH
-# or: git remote add origin https://github.com/YOUR_USERNAME/amazon-reviews-analysis.git   # HTTPS
 
 # push
 git push -u origin main
@@ -119,20 +118,13 @@ git push -u origin main
 ⚠️ Do not push raw CSVs, FAISS indexes, or model binaries — they’re too large.
 Keep them in data/ (ignored by .gitignore) or store in Drive/S3.
 
-📄 License
+## 📄 License
 
 MIT License
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 Dataset: Amazon Review Data (2018)
 
 Paper: Justifying recommendations using distantly-labeled reviews and fined-grained aspects
 Jianmo Ni, Jiacheng Li, Julian McAuley (EMNLP, 2019)
-
-
----
-
-✨ Copy this into your `README.md` file and you’re good to go.  
-
-Do you also want me to give you a **ready `requirements.txt`** content (so you can copy–paste that too)?
