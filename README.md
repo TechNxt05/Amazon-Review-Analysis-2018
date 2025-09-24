@@ -102,16 +102,16 @@ faiss-cpu
 tqdm
 
 ## 📤 Push to GitHub (step-by-step)
-# initialize repo (first time only)
+### initialize repo (first time only)
 git init
 git add .
 git commit -m "Initial commit: Amazon reviews analysis"
 
-# connect to GitHub repo
+### connect to GitHub repo
 git branch -M main
 git remote add origin git@github.com:YOUR_USERNAME/amazon-reviews-analysis.git   # SSH
 
-# push
+### push
 git push -u origin main
 
 
